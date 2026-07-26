@@ -73,7 +73,7 @@ function renderMenu() {
 
     const breads = createMenuSection("Breads & Rice", [
         { name: "Garlic Naan", description: "Soft leavened bread topped with fresh garlic and herbs.", price: "$4" },
-        { name: "Hyderabadi Biryani", description: "Fragrant basmati rice layered with spiced meat and saffron.", price: "$17" }
+        { name: "Hyderabadi Dum Biryani", description: "Fragrant basmati rice layered with spiced meat and saffron.", price: "$17" }
     ]);
 
     menuBox.append(appetizers, mains, breads);

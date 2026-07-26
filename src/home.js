@@ -34,7 +34,7 @@ function homeSection() {
     homeContainer.appendChild(infoDesc);
 }
 
-// homeSection();
+homeSection();
 
 homeBtn.addEventListener("click", () => {
     contentBox.textContent = "";
