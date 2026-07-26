@@ -1,3 +1,6 @@
-body {
-    background-color: rebeccapurple;
+:root {
+    --primary-color : #001f54;
+    --secondary-color: #f4f1de;
+    --heading-font-color: #ffd662;
+    --font-color: black;
 }
