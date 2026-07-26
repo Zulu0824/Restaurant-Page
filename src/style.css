@@ -4,3 +4,20 @@
     --heading-font-color: #ffd662;
     --font-color: black;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: #f4f1de;
+}
+
+#header-section {
+    background-color: var(--primary-color);
+}
