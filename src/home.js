@@ -4,6 +4,7 @@ const contentBox = document.getElementById("content");
 function homeSection() {
 
     const homeContainer = document.createElement("div");
+    homeContainer.id = "home-container";
     contentBox.appendChild(homeContainer);
 
     const estDesc = document.createElement("div");
@@ -14,17 +15,26 @@ function homeSection() {
 
     const titleDesc = document.createElement("div");
     titleDesc.innerHTML = `
-    <h5>Pataka</h5>
-    <p>Authentic Indian Cuisine</p>`
+    <h2>Pataka</h2>
+    <p>Authentic Indian Cuisine</p>`;
     titleDesc.id = "title-desc";
     homeContainer.appendChild(titleDesc);
 
     const infoDesc = document.createElement("div");
     infoDesc.id = "info-desc";
-    titleDesc.innerHTML = `
-    <p>At <i>Pataka</i> we serve authentic Indian cuisine consisting of Telugu, North Indian and Indo-Chinese.</p>`;
-
+    infoDesc.innerHTML = `
+    <h3>Our Story</h3>
+    <p>Since 1987, <i>Pataka</i> has been serving authentic Indian cuisine rooted in tradition. Every plate tells a story passed down through generations, spanning:</p>
+    <ul>
+    <li>Telugu — Bold & spice-forward flavors from South India.</li>
+    <li>North Indian — Rich & comforting classics.</li>
+    <li>Indo-Chinese — A delicious fusion of Chinese cooking with Indian spices.</li>
+    </ul>
+    <p>Our kitchen blends time-honored family recipes with fresh, hand-ground spices, bringing the true taste of India to every table we serve.</p>`;
+    homeContainer.appendChild(infoDesc);
 }
+
+homeSection();
 
 homeBtn.addEventListener("click", () => {
     contentBox.textContent = "";
