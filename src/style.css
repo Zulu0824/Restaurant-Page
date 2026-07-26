@@ -99,6 +99,7 @@ body {
 }
 
 /* ---Home-Section--- */
+
 #content {
     display: flex;
     justify-content: center;
@@ -219,6 +220,8 @@ body {
     letter-spacing: 1px;
 }
 
+/* ---Menu-Section--- */
+
 .menu-section {
     width: 100%;
     margin-bottom: 45px;
@@ -284,4 +287,104 @@ body {
     background-color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 20px;
+}
+
+/* ---Contact-Section--- */
+
+#contact-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+#contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contact-heading-text {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+#contact-sub-text {
+    font-family: "Fira Sans";
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px dashed rgba(62, 22, 12, 0.2);
+    border-bottom: 1px dashed rgba(62, 22, 12, 0.2);
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Fira Sans";
+    font-size: 1.2rem;
+}
+
+.contact-label {
+    font-family: "Charm";
+    font-size: 1.4rem;
+    color: var(--heading-font-color);
+    background-color: var(--primary-color);
+    padding: 4px 16px;
+    border-radius: 20px;
+    min-width: 90px;
+    text-align: center;
+}
+
+.contact-value {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.contact-value:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-subheading {
+    font-family: "Charm";
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#newsletter-subtext {
+    font-family: "Fira Sans";
+    font-size: 1rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+    max-width: 400px;
 }

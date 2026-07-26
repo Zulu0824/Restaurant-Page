@@ -1,7 +1,6 @@
 import { contentBox } from "./home.js";
 
 const menuBtn = document.getElementById("menu-btn");
-const menuBox = document.createElement("div");
 
 function createMenuItem(name, description, price) {
     const menuItem = document.createElement("article");
@@ -20,7 +19,6 @@ function createMenuItem(name, description, price) {
     itemPrice.textContent = price;
 
     menuItem.append(itemName, itemDescription, itemPrice);
-
     return menuItem;
 }
 
@@ -42,6 +40,8 @@ function createMenuSection(title, items) {
 
 function renderMenu() {
     contentBox.textContent = "";
+
+    const menuBox = document.createElement("div");   // ← created fresh every click
     menuBox.id = "menu-box";
 
     const header = document.createElement("div");
@@ -73,7 +73,7 @@ function renderMenu() {
 
     const breads = createMenuSection("Breads & Rice", [
         { name: "Garlic Naan", description: "Soft leavened bread topped with fresh garlic and herbs.", price: "$4" },
-        { name: "Hyderabadi Dum Biryani", description: "Fragrant basmati rice layered with spiced meat and saffron.", price: "$17" }
+        { name: "Hyderabadi Biryani", description: "Fragrant basmati rice layered with spiced meat and saffron.", price: "$17" }
     ]);
 
     menuBox.append(appetizers, mains, breads);
