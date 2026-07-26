@@ -141,14 +141,14 @@ body {
 #title-desc h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 #info-desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
     gap: 25px;
     color: var(--primary-color);
-    font-family: "Cookie";
+    font-family: var(--heading-font);
     letter-spacing: 2px;
     font-weight: 500;
 }
@@ -180,7 +180,7 @@ body {
 
 #title-desc::after {
     content: "";
-    width: 80px;
+    width: 200px;
     height: 2px;
     background-color: var(--heading-font-color);
     margin-top: 10px;

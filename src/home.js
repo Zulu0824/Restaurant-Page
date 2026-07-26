@@ -1,5 +1,5 @@
 const homeBtn = document.getElementById("home-btn");
-const contentBox = document.getElementById("content");
+export const contentBox = document.getElementById("content");
 
 function homeSection() {
 
@@ -16,7 +16,7 @@ function homeSection() {
     const titleDesc = document.createElement("div");
     titleDesc.innerHTML = `
     <h2>Pataka</h2>
-    <p>Authentic Indian Cuisine</p>`;
+    <p>Authentic Indian and Indo-Chinese Cuisine</p>`;
     titleDesc.id = "title-desc";
     homeContainer.appendChild(titleDesc);
 
@@ -34,7 +34,7 @@ function homeSection() {
     homeContainer.appendChild(infoDesc);
 }
 
-homeSection();
+// homeSection();
 
 homeBtn.addEventListener("click", () => {
     contentBox.textContent = "";
