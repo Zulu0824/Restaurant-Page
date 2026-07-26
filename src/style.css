@@ -2,10 +2,10 @@
 :root {
     --primary-color : #3E160C;
     --secondary-color: #ede0d4;
-    --heading-font-color: #e7b11c;
+    --heading-font-color: #E0C284 ;
     --font-color: black;
 }
-
+/* colros: #E0C284 */
 /* fonts: Cookie, Fira Sans, Charm, Bilbo, Fraunces */
 
 
@@ -46,7 +46,7 @@ body {
 }
 
 #nav-section button:focus {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--heading-font-color);
 }
 #nav-section button:hover {
     color: #f8f7f2;
