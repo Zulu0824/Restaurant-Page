@@ -65,8 +65,8 @@ body {
 }
 
 #header-logo svg {
-    height: 52px;
-    width: 52px;
+    height: 60px;
+    width: 60px;
     fill: var(--secondary-color);
 }
 
@@ -81,6 +81,7 @@ body {
     margin-right: 50px;
     font-size: 1.5rem;
     font-family: "Fira Sans";
+    font-weight: 400;
     padding: 10px 20px;
     border: 1px solid black;
     border-radius: 10px;
