@@ -79,13 +79,19 @@ body {
 
 #book-table {
     margin-right: 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Fira Sans";
     font-weight: 400;
-    padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 10px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid var(--heading-font-color);
     cursor: pointer;
-    color: var(--primary-color);
+    color: var(--heading-font-color);
+    background-color: var(--primary-color);
+}
+
+#book-table:hover {
     background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--heading-font-color);
 }

@@ -3,7 +3,7 @@ const navSection = document.getElementById("nav-section");
 const headerLogo = document.createElement("div");
 const bookTableBtn = document.createElement("button");
 
-bookTableBtn.textContent = "Book table";
+bookTableBtn.textContent = "RESERVE A TABLE";
 bookTableBtn.id = "book-table";
 
 headerLogo.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
